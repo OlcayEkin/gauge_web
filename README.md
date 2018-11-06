@@ -16,7 +16,7 @@ choco install gauge
 ```
 şeklinde kurabilirsiniz.
 
-* Eğer terminal vb. bir araç kullanmak istemiyorsanız, (Gauge zip repository)[https://github.com/getgauge/gauge/releases/tag/v1.0.3] adresinden .zip halinde indirebilirsiniz
+* Eğer terminal vb. bir araç kullanmak istemiyorsanız, [Gauge zip repository](https://github.com/getgauge/gauge/releases/tag/v1.0.3) adresinden .zip halinde indirebilirsiniz
 
 
 ## Projeye entegrasyonu
@@ -26,4 +26,4 @@ choco install gauge
 * Sonrasında gauge init <language> şeklinde template projeyi, projenize entegre edebilirsiniz. (örneğin; gauge init java)
 * IDE üzerinden; IDE'nize uygun olan plugin'i indirerek, Gauge'i IDE üzerinden de kullanabilirsiniz.
 
-Detaylı bilgi için (gauge'in resmi sayfasından)[https://gauge.org] destek alabilirsiniz
+Detaylı bilgi için [gauge'in resmi sayfasından](https://gauge.org) destek alabilirsiniz
