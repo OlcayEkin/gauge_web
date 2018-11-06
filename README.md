@@ -22,8 +22,8 @@ choco install gauge
 ## Projeye entegrasyonu
 
 * Projenize terminal üzerinden erişin
-* Projenizde kullandığınız programlama diline göre gauge install <language> şeklinde istediğiniz gauge prototype'ını kurabilirsiniz. (örneğin; gauge install java)
-* Sonrasında gauge init <language> şeklinde template projeyi, projenize entegre edebilirsiniz. (örneğin; gauge init java)
+* Projenizde kullandığınız programlama diline göre gauge install -language- şeklinde istediğiniz gauge prototype'ını kurabilirsiniz. (örneğin; gauge install java)
+* Sonrasında gauge init -language- şeklinde template projeyi, projenize entegre edebilirsiniz. (örneğin; gauge init java)
 * IDE üzerinden; IDE'nize uygun olan plugin'i indirerek, Gauge'i IDE üzerinden de kullanabilirsiniz.
 
 Detaylı bilgi için [gauge'in resmi sayfasından](https://gauge.org) destek alabilirsiniz
