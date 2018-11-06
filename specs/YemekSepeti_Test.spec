@@ -10,3 +10,4 @@ YemekSepeti-Login
 tags:yemeksepeti-login
 * Go to "https://www.yemeksepeti.com/" page
 * Login with "olcay.ekin@sahabt.com", "123456"
+* Search "kebap" from the main menu

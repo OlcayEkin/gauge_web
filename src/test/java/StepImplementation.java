@@ -2,8 +2,10 @@
 import browser.Browser;
 import com.thoughtworks.gauge.Step;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
@@ -51,4 +53,11 @@ public class StepImplementation extends Browser {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("user-info")));
     }
 
+    @Step("Search <item> from the main menu")
+    public void searchItem(String item) {
+        Select select = new Select(getDriver().findElement(By.id("ys-areaSelector")));
+        select.selectByVisibleText("Akatlar");
+        getDriver().findElement(By.cssSelector(".search-box.tt-input")).sendKeys(item);
+        getDriver().findElement(By.cssSelector(".search-box.tt-input")).sendKeys(Keys.ENTER);
+    }
 }
