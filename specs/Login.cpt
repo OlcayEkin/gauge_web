@@ -1,0 +1,9 @@
+Created by olcayekin on 5.11.2018
+
+This is a concept file with following syntax for each concept.
+# Login with <username>, <pass>
+* Choose "34" plate no
+* Set <username> as an username
+* Set <pass> as a pass
+* Click submit button
+* Wait main page to be displayed
