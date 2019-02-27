@@ -1,28 +1,10 @@
-# Gauge - Web project
+# Gauge with Selenium
 
-Gauge is open source, lightweight test automation tool that made by ThoughWorks.
+Gauge is a light weight cross-platform test automation tool. It provides the ability to author test cases in the business language. [You can check what gauge is from here](https://gauge.org).
 
 ## Installation
-
-* If you are using macOs, via npm;
-```
-npm install @getgauge/cli 
-```
-şeklinde kurabilirsiniz.
-
-*  If you are using windows, via chocolately;
-```
-choco install gauge
-```
-
-* If you dont want to use the terminal, you can download the zip file[Gauge zip repository](https://github.com/getgauge/gauge/releases/tag/v1.0.3)
-
-
-## Integration to the Project
-
-* Access your project via terminal
-* gauge install -language- (ie; gauge install java)
-* gauge init -language- | for the get the template project that provided by Gauge (ie; gauge init java)
-* From IDE; Download the plugin that fits your IDE.
-
-For more information [you can get support from gauge's main page](https://gauge.org)
+1. Install Java 1.8
+2. Install [Gauge](https://docs.gauge.org/latest/installation.html)
+3. Install Gauge from IntelliJ
+4. Clone this repository
+5. Use ```gauge init java``` at your repository file
