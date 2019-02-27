@@ -1,29 +1,28 @@
-# Gauge - Web projesi
+# Gauge - Web project
 
-Gauge; ThoughWorks tarafından geliştirilen, open-source ve light-weight bir test otomasyon aracıdır.
+Gauge is open source, lightweight test automation tool that made by ThoughWorks.
 
-## Kurulum
+## Installation
 
-* Eğer macOs kullanıyorsanız, npm üzerinden;
+* If you are using macOs, via npm;
 ```
 npm install @getgauge/cli 
 ```
 şeklinde kurabilirsiniz.
 
-* Eğer windows kullanıyorsanız, chocolately üzerinden;
+*  If you are using windows, via chocolately;
 ```
 choco install gauge
 ```
-şeklinde kurabilirsiniz.
 
-* Eğer terminal vb. bir araç kullanmak istemiyorsanız, [Gauge zip repository](https://github.com/getgauge/gauge/releases/tag/v1.0.3) adresinden .zip halinde indirebilirsiniz
+* If you dont want to use the terminal, you can download the zip file[Gauge zip repository](https://github.com/getgauge/gauge/releases/tag/v1.0.3)
 
 
-## Projeye entegrasyonu
+## Integration to the Project
 
-* Projenize terminal üzerinden erişin
-* Projenizde kullandığınız programlama diline göre gauge install -language- şeklinde istediğiniz gauge prototype'ını kurabilirsiniz. (örneğin; gauge install java)
-* Sonrasında gauge init -language- şeklinde template projeyi, projenize entegre edebilirsiniz. (örneğin; gauge init java)
-* IDE üzerinden; IDE'nize uygun olan plugin'i indirerek, Gauge'i IDE üzerinden de kullanabilirsiniz.
+* Access your project via terminal
+* gauge install -language- (ie; gauge install java)
+* gauge init -language- | for the get the template project that provided by Gauge (ie; gauge init java)
+* From IDE; Download the plugin that fits your IDE.
 
-Detaylı bilgi için [gauge'in resmi sayfasından](https://gauge.org) destek alabilirsiniz
+For more information [you can get support from gauge's main page](https://gauge.org)
