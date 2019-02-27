@@ -1,9 +1,12 @@
 
 import browser.Browser;
 import com.thoughtworks.gauge.Step;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -17,47 +20,25 @@ public class StepImplementation extends Browser {
         getDriver().navigate().to(url);
     }
 
-    @Step("Choose <plate> plate no")
-    public void choosePlate(String plateNo) {
-        WebDriverWait wait = new WebDriverWait(getDriver(), 60);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("plateNo")));
-        List<WebElement> listElement = getDriver().findElements(By.className("plateNo"));
-        for (WebElement element :
-                listElement) {
-            if (element.getText().equals(plateNo)) {
-                element.click();
-                break;
-            }
 
-        }
+    @Step("Search <item> from the page")
+    public void searchPage(String item) {
+        getDriver().findElement(By.cssSelector("[title='Ara']")).sendKeys(item);
+        getDriver().findElement(By.cssSelector("[title='Ara']")).sendKeys(Keys.ENTER);
     }
 
-    @Step("Set <username> as an username")
-    public void setUsername(String username) {
-        getDriver().findElement(By.id("UserName")).sendKeys(username);
-    }
-
-    @Step("Set <pass> as a pass")
-    public void setPass(String pass) {
-        getDriver().findElement(By.id("password")).sendKeys(pass);
-    }
-
-    @Step("Click submit button")
-    public void clickSubmit() {
-        getDriver().findElement(By.id("ys-fastlogin-button")).click();
-    }
-
-    @Step("Wait main page to be displayed")
-    public void waitMainPage() {
-        WebDriverWait wait = new WebDriverWait(getDriver(), 60);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("user-info")));
-    }
-
-    @Step("Search <item> from the main menu")
+    @Step("Select <item> from the page")
     public void searchItem(String item) {
-        Select select = new Select(getDriver().findElement(By.id("ys-areaSelector")));
-        select.selectByVisibleText("Akatlar");
-        getDriver().findElement(By.cssSelector(".search-box.tt-input")).sendKeys(item);
-        getDriver().findElement(By.cssSelector(".search-box.tt-input")).sendKeys(Keys.ENTER);
+        Select select = new Select(getDriver().findElement(By.tagName("cite")));
+        select.selectByVisibleText(item);
+    }
+
+    @Step("Click GetStarted button on the page")
+    public void clickGetStarted() {
+        getDriver().findElement(By.cssSelector("[href='get_started']")).click();
+    }
+    @Step("Check Overview")
+    public void checkOverview() {
+       Assert.assertTrue(getDriver().findElement(By.className("sidebar_get-started")).isDisplayed());
     }
 }
