@@ -29,13 +29,21 @@ public class StepImplementation extends Browser {
 
     @Step("Select <item> from the page")
     public void searchItem(String item) {
-        Select select = new Select(getDriver().findElement(By.tagName("cite")));
-        select.selectByVisibleText(item);
+        List<WebElement> listElement = getDriver().findElements(By.tagName("cite"));
+        for (WebElement element:
+             listElement) {
+            if (!element.getText().contains(item)){
+                continue;
+            }else{
+                element.click();
+                break;
+            }
+        }
     }
 
     @Step("Click GetStarted button on the page")
     public void clickGetStarted() {
-        getDriver().findElement(By.cssSelector("[href='get_started']")).click();
+        getDriver().findElement(By.cssSelector("[href='/get_started/']")).click();
     }
     @Step("Check Overview")
     public void checkOverview() {
