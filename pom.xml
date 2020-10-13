@@ -34,7 +34,7 @@
         <!-- CONFIG -->
 
         <!-- VERSIONS -->
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
         <selenium.chrome.driver.version>3.141.0</selenium.chrome.driver.version>
         <selenium.java.version>3.141.0</selenium.java.version>
         <selenium.support.version>3.141.0</selenium.support.version>
